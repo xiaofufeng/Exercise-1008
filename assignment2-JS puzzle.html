@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<script>
+  function display_sentence(){
+     sentence=prompt("Imput how many you want:");
+   if(sentence>10){
+        alert(sentence+' apples have 80% discount. Please continue to pay.')
+}else{
+  alert(sentence+' apple(s) have no discount. Please continue to pay.')
+}
+    }
+
+  function myFunction()
+  {
+   y=sentence;
+   z=5;
+   x=sentence<10? sentence*5: sentence*4;
+   document.getElementById("demo").innerHTML="You need to pay ¥"+x;
+  }
+  </script>
+
+</head>
+  <body style="margin-left: 550px;
+  margin-top: 150px;
+  margin-right: 500px;
+  margin-bottom: 200px;">
+
+    <h1>Apple Promotion</h1>
+<p>¥5 per apple.</p>
+    <p>Purchasing more than 10 enjoys 80% discount.</p>
+    <p>Please click for purchasing and paying.</p >
+
+  <button style="margin-left:45px; margin-top:15px" type="button" class="btn btn-outline-warning" onclick="display_sentence() ;">Purchase</button>
+  <button style="margin-left:15px; margin-top:15px"type="button" class="btn btn-outline-danger" onclick="myFunction()">Payment</button>
+
+  <p id="demo" style="margin-top: 20px;
+    margin-left: 15px"></p >
+
+  </body>
+
+</html>
